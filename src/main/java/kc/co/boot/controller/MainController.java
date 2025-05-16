@@ -12,8 +12,8 @@ public class MainController {
 	
 	@GetMapping(value="/")
 	public String main() {
-	
 		log.info("hello lee sany yoon");
+		log.info("아무거나 추가");
 		return "{\"msg\":\"OK\"}";
 	}
 	
