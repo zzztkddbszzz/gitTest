@@ -2,11 +2,11 @@ package kc.co.boot.controller;
 
 import java.util.Map;
 
-import javax.annotation.Resource;
-
+import org.apache.tomcat.util.file.ConfigurationSource.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -40,6 +40,8 @@ public class MainController {
 		return null;
 	}
 	
-	
-	
+	@DeleteMapping(value="/del")
+	public ResponseEntity<?> del(){
+		return null;
+	}
 }
