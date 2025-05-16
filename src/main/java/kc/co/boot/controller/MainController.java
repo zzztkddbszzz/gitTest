@@ -16,4 +16,13 @@ public class MainController {
 		log.info("hello lee sany yoon");
 		return "{\"msg\":\"OK\"}";
 	}
+	
+	@GetMapping(value="/list")
+	public String list() {
+		
+		return "";
+	}
+	
+	
+	
 }
