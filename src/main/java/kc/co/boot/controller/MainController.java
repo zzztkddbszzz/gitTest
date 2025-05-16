@@ -1,8 +1,11 @@
 package kc.co.boot.controller;
 
+import java.util.Map;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -20,8 +23,13 @@ public class MainController {
 	
 	@GetMapping(value="/list")
 	public String list() {
-		
 		return "";
+	}
+	
+	// 신규개발
+	@PostMapping(value="/write")
+	public Map<String, Object>write(){
+		return null;
 	}
 	
 	
