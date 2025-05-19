@@ -27,7 +27,8 @@ public class MainController {
 	
 	@GetMapping(value="/list")
 	public String list() {
-		return "{\"list\":[]}";
+		
+		return "";
 	}
 	
 	// 신규개발
